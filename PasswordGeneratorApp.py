@@ -1,6 +1,6 @@
 from tkinter import *
 from random import choice, shuffle
-# Initialize count
+
 count = 0
 # Update count when button is clicked
 def click():
@@ -74,7 +74,7 @@ label_count.pack()
 submit_button = Button(generator_root,
                        text='Submit',
                        command=submit)
-submit_button.pack(side=RIGHT)
+submit_button.pack(side=TOP)
 
 # Entry for designated box (password length)
 length_entry = Entry(generator_root, font=("Helvetica", 24))
