@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Daily Horoscope</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="WHEEL.webp">
+</head>
+<body>
+    <h1>(Check Your Daily Horoscope)</h1>
+
+    <label for="zodiac">Choose Your Zodiac Sign:---------</label>
+    <select id="zodiac">
+        <option value="aries">Aries/mesh (Mar 21 - Apr 19)</option>
+        <option value="taurus">Taurus/vrishabh (Apr 20 - May 20)</option>
+        <option value="gemini">Gemini/mithun (May 21 - Jun 20)</option>
+        <option value="cancer">Cancer/kark (Jun 21 - Jul 22)</option>
+        <option value="leo">Leo/simha (Jul 23 - Aug 22)</option>
+        <option value="virgo">Virgo/kanya (Aug 23 - Sep 22)</option>
+        <option value="libra">Libra/tula (Sep 23 - Oct 22)</option>
+        <option value="scorpio">Scorpio/vrishchik (Oct 23 - Nov 21)</option>
+        <option value="sagittarius">Sagittarius/dhanu (Nov 22 - Dec 21)</option>
+        <option value="capricorn">Capricorn/makarr (Dec 22 - Jan 19)</option>
+        <option value="aquarius">Aquarius/kumbh (Jan 20 - Feb 18)</option>
+        <option value="pisces">Pisces/meen (Feb 19 - Mar 20)</option>
+    </select>
+
+    <button onclick="showHoroscope()">Get Horoscope</button>
+    <button onclick="location.href='compatibility.html'">Check Compatibility 💖</button>
+
+    <!-- Box {horoscope output} -->
+    <div id="horoscope-box">
+        <p id="horoscope"></p>        <!--THIS DIV MAkes it EASIER TO ADD COLOR,PADING,BORDER,MARGIN to the Box-->
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>

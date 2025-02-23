@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: rgb(12, 10, 10) url('Sternzeichen _ Zodiac.jpg') no-repeat center center fixed;
+    background-size: contain;
+    color: rgb(255, 254, 254);
+}
+
+h1 {
+    margin-top: 50px;
+    font-size: 50px;
+    
+}
+
+select, button {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 50px;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(216, 21, 79);
+    color: rgb(24, 23, 23);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(161, 19, 243, 0.904);
+}
+
+/* Horoscope Output Box */
+#horoscope-box {
+    display: none;
+    margin-top: 160px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: 0px 0px 40px rgba(197, 31, 31, 0.301);
+    transition: opacity 0.5s ease-in-out;
+}
+
+#horoscope {
+    font-family:  Georgia, sans-serif;
+    color: #f8cd21; /* Gold color of that output box */
+}
+
+/* Heart Shape for Compatibility Percentage */
+.heart {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background: red;
+    margin: auto;
+    transform: rotate(-45deg);
+    display: flex;
+    justify-content: top;
+    align-items: top;
+}
+
+.heart::before, .heart::after {
+    content: "";
+    background: rgb(255, 0, 13);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.heart::before {
+    width: 120px;
+    height: 120px;
+    top: -60px;
+    left: 0;
+}
+
+.heart::after {
+    width: 120px;
+    height: 120px;
+    top: 0;
+    left: 50px;
+}
+/* Compatibility Percentage Text Inside Heart */
+.heart p {
+    color: white;
+    font-size: 60px; /* Adjust size to fit inside the heart */
+    font-weight: bold;
+    position: fixed;
+    transform: rotate(45deg); /* Correct rotation to align with heart */
+    top: -10%; /* Move text down slightly */
+    left: 60%; /* Center text horizontally */
+    transform: translate(-50%, -50%)rotate(45deg) ; /* Perfect centering */
+    text-align: center;
+    width: 100%; /* Ensure text fits inside */
+    Z-index:2;
+    padding:30px;
+}
+
+
+/* Message Box for Final Prediction */
+.messageBox {
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    background: rgba(70, 57, 57, 0.616);
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* Heart Animation */
+@keyframes beat {
+    0%, 100% { transform: scale(1) rotate(-45deg); }
+    50% { transform: scale(1.1) rotate(-45deg); }
+}
+
+.heart.beating {
+    animation: beat 0.9s infinite alternate;
+}
+
+/* Back Button Styling */
+#backButton {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #4dffff; /*Front color of button*/
+    color: rgb(155, 27, 172); /*TEXT COLOR*/
+    font-size: 16px;
+}
+
+#backButton:hover {
+    background-color: #b5f015; /*Back color of button*/
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>True Compatibility 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>💕 Compatibility Calculator 💕</h1>
+        <p>Enter names & birth signs to check love compatibility</p>
+
+        <input type="text" id="boyName" placeholder="Boy's Name">
+        <select id="boySign">
+            <option value="">Boy's Zodiac Sign</option>
+            <option value="Aries">Aries</option>
+            <option value="Taurus">Taurus</option>
+            <option value="Gemini">Gemini</option>
+            <option value="Cancer">Cancer</option>
+            <option value="Leo">Leo</option>
+            <option value="Virgo">Virgo</option>
+            <option value="Libra">Libra</option>
+            <option value="Scorpio">Scorpio</option>
+            <option value="Sagittarius">Sagittarius</option>
+            <option value="Capricorn">Capricorn</option>
+            <option value="Aquarius">Aquarius</option>
+            <option value="Pisces">Pisces</option>
+        </select>
+
+        <input type="text" id="girlName" placeholder="Girl's Name">
+        <select id="girlSign">
+            <option value="">Girl's Zodiac Sign</option>
+            <option value="Aries">Aries</option>
+            <option value="Taurus">Taurus</option>
+            <option value="Gemini">Gemini</option>
+            <option value="Cancer">Cancer</option>
+            <option value="Leo">Leo</option>
+            <option value="Virgo">Virgo</option>
+            <option value="Libra">Libra</option>
+            <option value="Scorpio">Scorpio</option>
+            <option value="Sagittarius">Sagittarius</option>
+            <option value="Capricorn">Capricorn</option>
+            <option value="Aquarius">Aquarius</option>
+            <option value="Pisces">Pisces</option>
+        </select>
+
+        <button onclick="calculateCompatibility()">Calculate 💖</button>
+
+        <button onclick="clearResults()">Clear Results ❌</button>
+
+        <!-- Heart Shape for Compatibility % -->
+        <div id="resultBox" class="resultBox">
+            <div class="heart" id="heart">
+                <p id="compatibilityPercent"></p>
+            </div>
+
+            <!-- Message Box for compatibility Prediction -->
+            <div class="messageBox" id="messageBox">
+                <p id="compatibilityText"></p>
+            </div>
+        </div>
+    </div>
+
+    <button id="backButton">🔙 Back to Horoscope Page</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
