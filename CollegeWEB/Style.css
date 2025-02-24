@@ -1,0 +1,107 @@
+body, html {
+    margin:1;  /*About box thoda niche se shuru krna display me*/
+
+}
+#about{
+        text-align: center; /* Aligns text inside elements */
+        padding-top: 1px;
+        color:white;
+        background-color: rgba(231, 42, 99, 0.986);
+}
+
+h1 {
+    font-size: 40px; /* Makes the heading larger */
+    margin-bottom: 0; /* Removes space below */
+    line-height: 0.9; /* Reduces line spacing */
+}
+
+/*Image side left krna about me*/
+.top-left-img {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 100px;  /* Adjust size */
+}
+
+/* Horizontallyy Bar Styling */
+.bar {
+    display: flex; /*Enables Flexbox layout (row by default)*/
+    justify-content: center; /* Center buttons */
+    background-color: #f5e7c2;
+    height: 40px;
+}
+
+/* Button Styling */
+.bar button {
+    background-color:white;
+    color: rgba(156, 154, 19, 0.993);
+    border: 0;  /*gap betn buttons & bar*/
+    padding: 7px 60px;  /*box's vertical & horizontal size*/
+    margin: 4px; /* MARGIN BETn BUTTONS IN BAR*/
+    cursor: pointer; /* hand wala symbol*/
+    font-size: 12px; 
+    border-radius: 11px; /* buttons ko round bnana*/
+}
+.bar button:hover {
+    background-color: #995618;
+}
+
+.divider {
+    color: white;
+    font-size: 70px;
+    margin: 30 10px;
+}
+
+.block {
+    background-color: #f4c2c2; /* Light skin tone */
+    width: 30%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* FIXING At Top-Right Corner */
+.block.details {
+    position: absolute;
+    text-align: left;
+}
+
+/* Dropdown Menu */
+select, input[type="date"] {
+    width: 40%;
+    padding: 2px;
+    border: 1px solid #303030;
+    border-radius: 7px;
+}
+
+button {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0px 630px;
+    padding: 10px 9px 8px;
+    font-size: 17px;
+    border: none;
+    border-radius: 12px;
+    background-color: rgb(216, 21, 79);
+    color: rgb(240, 234, 234);
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgba(161, 19, 243, 0.904);
+}
+
+#logout_button{
+    margin: 10px 0px;
+    top: 170px;
+    left: 0px;
+    background-color: rgb(196, 105, 105);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+#logout_button:hover {
+    color: white;
+    background-color: rgba(216, 90, 96, 0.904);
+    
+}
+
+

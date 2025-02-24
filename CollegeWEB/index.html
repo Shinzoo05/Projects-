@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>University Of Delhi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="ARSD COLLEGE.jpg">
+</head>
+<body>
+    <!-- About Section ------------------------------->
+    <section id="about">
+        <img src="download.jpg" alt="Small Logo" class="top-left-img">
+        <div>
+            <h1><u>Atma Ram Sanatan Dharma College</u></h1>
+            <p style="margin-bottom: 0em;">
+               Semester Examination 
+            </p>
+        </div>
+    </section>
+    <p style="background-color: black"></p>
+           
+    <h1 style="
+       color: rgb(150, 64, 64);
+           border-bottom: 7px solid #162adb;
+           padding: 1px;
+           text-align: center;
+           font-size: 40px;
+           ">STUDENT LOGIN 
+    </h1>
+    <br>
+
+    <div class="block">
+        <div class="details">
+            <form action="login.php" method="post">
+
+                <label for="name">Your Name:- </label>
+                <input type="text" placeholder="Name">
+                <br><br>
+
+                <label for="roll_no">Your Roll No:- </label>
+                <input type="text" placeholder="College roll no.">
+                <br><br>
+                
+                <label for="semester">Your Semester:- </label>
+                <select id="semester">                          <!-- Dropdown Menu -->
+                    <option value="sem1">Semester 1</option>
+                    <option value="sem2">Semester 2</option>
+                    <option value="sem3">Semester 3</option>
+                    <option value="sem4">Semester 4</option>
+                    <option value="sem5">Semester 5</option>
+                    <option value="sem6">Semester 6</option>
+                    <option value="sem7">Semester 7</option>
+                    <option value="sem8">Semester 8</option>
+                </select>
+                <br><br>
+                
+                <label for="dob"><i class="fas fa-calendar"></i> Your D.O.B:-</label>
+                <input type="date" id="dob">
+                <br><br>
+                
+                <label for="college_id">Your College Id:- </label>
+                <input type="text" placeholder="College Email Id">
+                <br><br>
+
+                <!----------<button onclick="location.href='Main.html'"style="margin: 10px 160px;">Submit </button>------>
+            </form>
+        </div>
+    </div>
+
+    <button onclick="location.href='Main.html'">Submit </button>
+    <script src="script.js"></script>
+</body>
+</html>
